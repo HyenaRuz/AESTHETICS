@@ -9,7 +9,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
-	<script type="text/javascript" src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+	<!-- <script type="text/javascript" src="js/code.jquery.com_jquery-3.7.0.min.js"></script> -->
 	<script type="text/javascript" src="js/main.js"></script>
 	<title>catalog</title>
 </head>
@@ -176,9 +176,9 @@
 					</div>
 					<div class="holder-catalog">
 						<aside class="asidebar-filter">
-								<form action="#">
+								<form action="#" class="holder-group">
 									<div class="group">
-										<h4>Група товару</h4>
+										<h4 class="title">Група товару</h4>
 										<div class="box">
 											<div class="row">
 												<input class="row-input" id="gel-for-washing" type="checkbox">
@@ -207,7 +207,7 @@
 										</div>
 									</div>
 									<div class="group">
-										<h4>Вік</h4>
+										<h4  class="title">Вік</h4>
 										<div class="box">
 											<div class="row">
 												<input class="row-input" id="to-ten" type="checkbox">
@@ -232,7 +232,7 @@
 										</div>
 									</div>
 									<div class="group">
-										<h4>Призначення</h4>
+										<h4  class="title">Призначення</h4>
 										<div class="box">
 											<div class="row">
 												<input class="row-input" id="for-the-face" type="checkbox">
@@ -257,7 +257,7 @@
 										</div>
 									</div>
 									<div class="group">
-										<h4>Час застосування</h4>
+										<h4 class="title">Час застосування</h4>
 										<div class="box">
 											<div class="row">
 												<input class="row-input" id="morning" type="checkbox">
@@ -278,7 +278,7 @@
 										</div>
 									</div>
 									<div class="group">
-										<h4>Ступінь захисту</h4>
+										<h4 class="title">Ступінь захисту</h4>
 										<div class="box">
 											<div class="row">
 												<input class="row-input" id="ten-fifteen" type="checkbox">
@@ -303,7 +303,7 @@
 										</div>
 									</div>
 									<div class="group">
-										<h4>Тип шкіри</h4>
+										<h4 class="title">Тип шкіри</h4>
 										<div class="box">
 											<div class="row">
 												 <input class="row-input" id="all-types" type="checkbox">
@@ -949,6 +949,8 @@
 			</section>
 		</footer>
 	</div>
+	<script src="js/burger.js"></script>
+	<script src="js/order.js"></script>
 </body>
 
 </html>

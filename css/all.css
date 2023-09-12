@@ -1056,7 +1056,7 @@ header.open{
   position: relative;
 }
 .asidebar-filter .group{
-  margin-bottom: 12px;
+  /* margin-bottom: 12px; */
   width: 226px;
 }
 .asidebar-filter .group h4{
@@ -1095,12 +1095,24 @@ header.open{
   /* transition: all 0.3s; */
 }
 .asidebar-filter .group .box{
-  display: none;
+  /* display: none; */
   overflow: hidden;
+  opacity: 0;
+  height: 0px;
+  transition: all 0.3s;
 }
-.asidebar-filter .group .box .row{
+
+.asidebar-filter .group .box.open{
+  overflow: hidden;
+  opacity: 1;
+  height: inherit;
+  transition: all 0.3s;
+}
+.asidebar-filter .group .box.open .row{
+  display: block;
   margin-top: 6px;
   width: 226px;
+  margin-bottom: 12px;
 }
 .asidebar-filter .group .price-input{
   display: flex;
@@ -1769,6 +1781,13 @@ margin-top: 5px;
   width: 100%;
   justify-content: space-between;
 }
+
+.personal-area .holder .address-book .box{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .personal-area .address-book p{
   font-family: 'Candara';
   font-style: normal;
@@ -3101,6 +3120,7 @@ margin-top: 5px;
   .contact-page .holder .gratitude h2 {
     font-size: 30px;
   }
+  
   .personal-area h3 {
     font-size: 18px;
     line-height: normal;
@@ -3129,6 +3149,11 @@ margin-top: 5px;
   }
   .text-input + .text-input {
     margin-top: 15px;
+  }
+  .personal-area .holder .holder-group{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
   }
   .personal-area .holder .contact-information form .button{
     display: block;

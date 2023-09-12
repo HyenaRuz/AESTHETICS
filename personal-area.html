@@ -8,7 +8,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
-	<script type="text/javascript" src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+	<!-- <script type="text/javascript" src="./js/code.jquery.com_jquery-3.7.0.min.js"></script> -->
 	<script type="text/javascript" src="js/main.js"></script>
 	<title>personal-area</title>
 </head>
@@ -169,619 +169,509 @@
 								<a class="t3" href="#">Список бажань</a>
 								<a class="t4" href="#">Історія замовлень</a>
 							</div>
-							<div class="contact-information group t1">
-								<h4 class="switch">Контактна інформація</h4>
-								<div class="box">
-									<form action="">
-										<div>
-											<div class="text-input">
-												<label for="name">Ваше ім’я</label>
-												<input type="text" id="name" placeholder="Світлана">
+							<div class="holder-group">
+								<div class="contact-information  t1 group" id="group">
+									<h4 class="switch">Контактна інформація</h4>
+									<div class="box">
+										<form action="">
+											<div>
+												<div class="text-input">
+													<label for="name">Ваше ім’я</label>
+													<input type="text" id="name" placeholder="Світлана">
+												</div>
+												<div class="text-input">
+													<label for="surname">Ваше прізвище</label>
+													<input type="text" id="surname" placeholder="Шевченко">
+												</div>
+												<div class="text-input">
+													<label for="email">E-mail</label>
+													<input type="text" id="email" placeholder="shevSv002@gmail.com">
+												</div>
 											</div>
-											<div class="text-input">
-												<label for="surname">Ваше прізвище</label>
-												<input type="text" id="surname" placeholder="Шевченко">
+											<div>
+												<div class="text-input">
+													<label for="phone-number">Номер телефону</label>
+													<input type="text" id="phone-number" placeholder="+38 068 564 77 99">
+												</div>
+												<div class="text-input">
+													<label for="birth-date">Дата народження</label>
+													<input type="text" id="birth-date" placeholder="8.10.1989">
+												</div>
+												<a href="#" class="button">
+													<span>Зберегти</span>
+												</a>
+												<a href="#" class="details">Вийти</a>
 											</div>
-											<div class="text-input">
-												<label for="email">E-mail</label>
-												<input type="text" id="email" placeholder="shevSv002@gmail.com">
-											</div>
-										</div>
-										<div>
-											<div class="text-input">
-												<label for="phone-number">Номер телефону</label>
-												<input type="text" id="phone-number" placeholder="+38 068 564 77 99">
-											</div>
-											<div class="text-input">
-												<label for="birth-date">Дата народження</label>
-												<input type="text" id="birth-date" placeholder="8.10.1989">
-											</div>
+										</form>
+										<a href="#" class="button">
+											<span>Зберегти</span>
+										</a>
+									</div>
+								</div>
+								<div class="address-book  t2 group" id="group">
+									<h4 class="switch">Адресна книга</h4>
+									<div class="box">
+										<div class="address">
+											<ul>
+												<li>
+													<div class="icon-number">1</div>
+													<div>
+														<p>Шевченко Світлана</p>
+														<p>Місто КиЇв</p>
+														<p>Градинська 11б, 85</p>
+														<p>+38 068 564 77 99</p>
+														<div>
+															<a class="edit" href="#">Редагувати</a>
+															<a class="delete" href="#">Видалити</a>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="icon-number">2</div>
+													<div>
+														<p>Шевченко Світлана</p>
+														<p>Місто Харків</p>
+														<p>Трінклера 18, 65</p>
+														<p>+38 068 564 77 99</p>
+														<div>
+															<a class="edit" href="#">Редагувати</a>
+															<a class="delete" href="#">Видалити</a>
+														</div>
+													</div>
+												</li>
+											</ul>
 											<a href="#" class="button">
 												<span>Зберегти</span>
 											</a>
-											<a href="#" class="details">Вийти</a>
 										</div>
-									</form>
-									<a href="#" class="button">
-										<span>Зберегти</span>
-									</a>
-								</div>
-							</div>
-							<div class="address-book group t2">
-								<h4 class="switch">Адресна книга</h4>
-								<div class="box">
-									<div class="address">
-										<ul>
-											<li>
-												<div class="icon-number">1</div>
+										<div class="new-address">
+											<p>Додати нову адресу:</p>
+											<form action="">
+												<input type="text" placeholder="ПІБ">
+												<input type="text" placeholder="Місто">
 												<div>
-													<p>Шевченко Світлана</p>
-													<p>Місто КиЇв</p>
-													<p>Градинська 11б, 85</p>
-													<p>+38 068 564 77 99</p>
+													<input type="text" placeholder="Вулиця">
+													<input type="text" placeholder="Корпус">
+													<input type="text" placeholder="Квартира">
+												</div>
+												<input type="text" placeholder="Поштове відділення">
+												<input type="text" placeholder="Номер телефону">
+											</form>
+										</div>
+										<a href="#" class="button down">
+											<span>Зберегти</span>
+										</a>
+									</div>
+								</div>
+								<div class="wish-list  t3 group" id="group">
+									<h4 class="switch">Список бажань</h4>
+									<div class="box">
+										<ul>
+											<li class="wish-list-item">
+												<img src="./images/img-product-facial_fluid_for_dry_skin.png" alt="">
+												<div class="item-name-end-button">
+													<div class="rating-stock">
+														<ul class="rating">
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+														</ul>
+														<p>В наявності</p>
+													</div>
+													<p class="description">
+														Флюид для обличчя
+														для сухої шкіри
+													</p>
+													<p>630 грн</p>
 													<div>
-														<a class="edit" href="#">Редагувати</a>
+														<a class="button small" href="#">
+															<span>
+																В кошик
+															</span>
+														</a>
+														<a class="delete" href="#">Видалити</a>
+													</div>
+												</div>
+												
+											</li>
+											<li class="wish-list-item">
+												<img src="./images/img-product-mattifying_day_cream_for_oily_skin.png" alt="">
+												<div class="item-name-end-button">
+													<div class="rating-stock">
+														<ul class="rating">
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+														</ul>
+														<p>Залишилось 3 шт</p>
+													</div>
+													<p class="description">
+														Матуючий денний крем для жирної шкіри
+													</p>
+													<p>680 грн</p>
+													<div>
+														<a class="button small" href="#">
+															<span>
+																В кошик
+															</span>
+														</a>
 														<a class="delete" href="#">Видалити</a>
 													</div>
 												</div>
 											</li>
-											<li>
-												<div class="icon-number">2</div>
-												<div>
-													<p>Шевченко Світлана</p>
-													<p>Місто Харків</p>
-													<p>Трінклера 18, 65</p>
-													<p>+38 068 564 77 99</p>
+											<li class="wish-list-item">
+												<img src="./images/img-product-moisturizing_serum_for_normal_skin.png" alt="">
+												<div class="item-name-end-button">
+													<di class="rating-stock">
+														<ul class="rating">
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+														</ul>
+														<p>В наявності</p>
+													</di>
+													<p class="description">
+														Зволожуюча сироватка для нормальної шкіри
+													</p>
+													<p>480 грн</p>
 													<div>
-														<a class="edit" href="#">Редагувати</a>
+														<a class="button small" href="#">
+															<span>
+																В кошик
+															</span>
+														</a>
+														<a class="delete" href="#">Видалити</a>
+													</div>
+												</div>
+												
+											</li>
+											<li class="wish-list-item">
+												<img src="./images/img-product-facial_fluid_for_dry_skin.png" alt="">
+												<div class="item-name-end-button">
+													<div  class="rating-stock">
+														<ul class="rating">
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+														</ul>
+														<p>В наявності</p>
+													</div>
+													<p class="description">
+														Флюид для обличчя
+														для сухої шкіри
+													</p>
+													<p>630 грн</p>
+													<div>
+														<a class="button small" href="#">
+															<span>
+																В кошик
+															</span>
+														</a>
+														<a class="delete" href="#">Видалити</a>
+													</div>
+												</div>
+											</li>
+											<li class="wish-list-item">
+												<img src="./images/img-product-mattifying_day_cream_for_oily_skin.png" alt="">
+												<div class="item-name-end-button">
+													<div class="rating-stock">
+														<ul class="rating">
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+														</ul>
+														<p>Залишилось 3 шт</p>
+													</div>
+													<p class="description">
+														Матуючий денний крем для жирної шкіри
+													</p>
+													<p>680 грн</p>
+													<div>
+														<a class="button small" href="#">
+															<span>
+																В кошик
+															</span>
+														</a>
+														<a class="delete" href="#">Видалити</a>
+													</div>
+												</div>
+											</li>
+											<li class="wish-list-item">
+												<img src="./images/img-product-moisturizing_serum_for_normal_skin.png" alt="">
+												<div class="item-name-end-button">
+													<div class="rating-stock">
+														<ul class="rating">
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+															<li>
+																<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																		fill="#D9D9D9" />
+																</svg>
+															</li>
+														</ul>
+														<p>В наявності</p>
+													</div>
+													<p class="description">
+														Зволожуюча сироватка для нормальної шкіри
+													</p>
+													<p>480 грн</p>
+													<div>
+														<a class="button small" href="#">
+															<span>
+																В кошик
+															</span>
+														</a>
 														<a class="delete" href="#">Видалити</a>
 													</div>
 												</div>
 											</li>
 										</ul>
-										<a href="#" class="button">
-											<span>Зберегти</span>
-										</a>
 									</div>
-									<div class="new-address">
-										<p>Додати нову адресу:</p>
-										<form action="">
-											<input type="text" placeholder="ПІБ">
-											<input type="text" placeholder="Місто">
-											<div>
-												<input type="text" placeholder="Вулиця">
-												<input type="text" placeholder="Корпус">
-												<input type="text" placeholder="Квартира">
-											</div>
-											<input type="text" placeholder="Поштове відділення">
-											<input type="text" placeholder="Номер телефону">
-										</form>
-									</div>
-									<a href="#" class="button down">
-										<span>Зберегти</span>
-									</a>
 								</div>
-							</div>
-							<div class="wish-list group t3">
-								<h4 class="switch">Список бажань</h4>
-								<div class="box">
-									<ul>
-										<li class="wish-list-item">
-											<img src="./images/img-product-facial_fluid_for_dry_skin.png" alt="">
-											<div class="item-name-end-button">
-												<div class="rating-stock">
-													<ul class="rating">
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-													</ul>
-													<p>В наявності</p>
-												</div>
-												<p class="description">
-													Флюид для обличчя
-													для сухої шкіри
-												</p>
-												<p>630 грн</p>
-												<div>
-													<a class="button small" href="#">
-														<span>
-															В кошик
-														</span>
-													</a>
-													<a class="delete" href="#">Видалити</a>
-												</div>
-											</div>
-											
-										</li>
-										<li class="wish-list-item">
-											<img src="./images/img-product-mattifying_day_cream_for_oily_skin.png" alt="">
-											<div class="item-name-end-button">
-												<div class="rating-stock">
-													<ul class="rating">
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-													</ul>
-													<p>Залишилось 3 шт</p>
-												</div>
-												<p class="description">
-													Матуючий денний крем для жирної шкіри
-												</p>
-												<p>680 грн</p>
-												<div>
-													<a class="button small" href="#">
-														<span>
-															В кошик
-														</span>
-													</a>
-													<a class="delete" href="#">Видалити</a>
-												</div>
-											</div>
-										</li>
-										<li class="wish-list-item">
-											<img src="./images/img-product-moisturizing_serum_for_normal_skin.png" alt="">
-											<div class="item-name-end-button">
-												<di class="rating-stock">
-													<ul class="rating">
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-													</ul>
-													<p>В наявності</p>
-												</di>
-												<p class="description">
-													Зволожуюча сироватка для нормальної шкіри
-												</p>
-												<p>480 грн</p>
-												<div>
-													<a class="button small" href="#">
-														<span>
-															В кошик
-														</span>
-													</a>
-													<a class="delete" href="#">Видалити</a>
-												</div>
-											</div>
-											
-										</li>
-										<li class="wish-list-item">
-											<img src="./images/img-product-facial_fluid_for_dry_skin.png" alt="">
-											<div class="item-name-end-button">
-												<div  class="rating-stock">
-													<ul class="rating">
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-													</ul>
-													<p>В наявності</p>
-												</div>
-												<p class="description">
-													Флюид для обличчя
-													для сухої шкіри
-												</p>
-												<p>630 грн</p>
-												<div>
-													<a class="button small" href="#">
-														<span>
-															В кошик
-														</span>
-													</a>
-													<a class="delete" href="#">Видалити</a>
-												</div>
-											</div>
-										</li>
-										<li class="wish-list-item">
-											<img src="./images/img-product-mattifying_day_cream_for_oily_skin.png" alt="">
-											<div class="item-name-end-button">
-												<div class="rating-stock">
-													<ul class="rating">
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-													</ul>
-													<p>Залишилось 3 шт</p>
-												</div>
-												<p class="description">
-													Матуючий денний крем для жирної шкіри
-												</p>
-												<p>680 грн</p>
-												<div>
-													<a class="button small" href="#">
-														<span>
-															В кошик
-														</span>
-													</a>
-													<a class="delete" href="#">Видалити</a>
-												</div>
-											</div>
-										</li>
-										<li class="wish-list-item">
-											<img src="./images/img-product-moisturizing_serum_for_normal_skin.png" alt="">
-											<div class="item-name-end-button">
-												<div class="rating-stock">
-													<ul class="rating">
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-														<li>
-															<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																	fill="#D9D9D9" />
-															</svg>
-														</li>
-													</ul>
-													<p>В наявності</p>
-												</div>
-												<p class="description">
-													Зволожуюча сироватка для нормальної шкіри
-												</p>
-												<p>480 грн</p>
-												<div>
-													<a class="button small" href="#">
-														<span>
-															В кошик
-														</span>
-													</a>
-													<a class="delete" href="#">Видалити</a>
-												</div>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="orders-history group t4">
-								<h4 class="switch">Історія замовлень</h4>
-								<div class="box">
-									<div class="holder-order">
-										<div class="list-of-orders">
-											<h4>Замовлення №5647</h4>
-											<div class="data-status">
-												<div class="data">
-													<p>Дата замовлення:</p>
-													<p>9.08.2022</p>
-												</div>
-												<div class="status">
-													<p>Статус:</p>
-													<p>В обробці</p>
-												</div>
-											</div>
-											<ul class="list">
-												<li class="order">
-													<img src="./images/img-product-night_antiaging_cream_for_dry_skin.png" alt="">
-													<div class="holder">
-														<div class="name">
-															<p>
-																Нічний антивіковій крем
-																для сухої шкіри
-															</p>
-															<ul class="rating">
-																<li>
-																	<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path
-																			d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																			fill="#D9D9D9" />
-																	</svg>
-																</li>
-																<li>
-																	<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path
-																			d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																			fill="#D9D9D9" />
-																	</svg>
-																</li>
-																<li>
-																	<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path
-																			d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																			fill="#D9D9D9" />
-																	</svg>
-																</li>
-																<li>
-																	<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path
-																			d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																			fill="#D9D9D9" />
-																	</svg>
-																</li>
-																<li>
-																	<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path
-																			d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																			fill="#D9D9D9" />
-																	</svg>
-																</li>
-															</ul>
-														</div>
-														<div class="price-rating">
-															<p>1 шт</p>
-															<p>860 грн</p>
-														</div>
+								<div class="orders-history  t4 group" id="group">
+									<h4 class="switch">Історія замовлень</h4>
+									<div class="box">
+										<div class="holder-order">
+											<div class="list-of-orders">
+												<h4>Замовлення №5647</h4>
+												<div class="data-status">
+													<div class="data">
+														<p>Дата замовлення:</p>
+														<p>9.08.2022</p>
 													</div>
-												</li>
-												<li class="order">
-													<img src="./images/img-product-make_up_remover_gel.png" alt="">
-													<div class="holder">
-														<div class="name">
-															<p>Гель для зняття макіяжу</p>
-															<ul class="rating">
-																<li>
-																	<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path
-																			d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																			fill="#D9D9D9" />
-																	</svg>
-																</li>
-																<li>
-																	<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path
-																			d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																			fill="#D9D9D9" />
-																	</svg>
-																</li>
-																<li>
-																	<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path
-																			d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																			fill="#D9D9D9" />
-																	</svg>
-																</li>
-																<li>
-																	<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path
-																			d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																			fill="#D9D9D9" />
-																	</svg>
-																</li>
-																<li>
-																	<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path
-																			d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																			fill="#D9D9D9" />
-																	</svg>
-																</li>
-															</ul>
-														</div>
-														<div class="price-rating">
-															<p>2 шт</p>
-															<p>1460 грн</p>
-														</div>
+													<div class="status">
+														<p>Статус:</p>
+														<p>В обробці</p>
 													</div>
-												</li>
-												<li class="order">
-													<img src="./images/img-product-anti_aging_serum_for_the_area_around_the_eyes.png" alt="">
-													<div class="holder">
-														<div class="name">
-															<p>
-																Антивікова сироватка
-																для зони навколо очей
-															</p>
-															<ul class="rating">
+												</div>
+												<ul class="list">
+													<li class="order">
+														<img src="./images/img-product-night_antiaging_cream_for_dry_skin.png" alt="">
+														<div class="holder">
+															<div class="name">
+																<p>
+																	Нічний антивіковій крем
+																	для сухої шкіри
+																</p>
+																<ul class="rating">
 																	<li>
 																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
 																			xmlns="http://www.w3.org/2000/svg">
@@ -822,323 +712,435 @@
 																				fill="#D9D9D9" />
 																		</svg>
 																	</li>
-															</ul>
+																</ul>
+															</div>
+															<div class="price-rating">
+																<p>1 шт</p>
+																<p>860 грн</p>
+															</div>
 														</div>
-														<div class="price-rating">
-															<p>1 шт</p>
-															<p>900 грн</p>
+													</li>
+													<li class="order">
+														<img src="./images/img-product-make_up_remover_gel.png" alt="">
+														<div class="holder">
+															<div class="name">
+																<p>Гель для зняття макіяжу</p>
+																<ul class="rating">
+																	<li>
+																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																			xmlns="http://www.w3.org/2000/svg">
+																			<path
+																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																				fill="#D9D9D9" />
+																		</svg>
+																	</li>
+																	<li>
+																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																			xmlns="http://www.w3.org/2000/svg">
+																			<path
+																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																				fill="#D9D9D9" />
+																		</svg>
+																	</li>
+																	<li>
+																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																			xmlns="http://www.w3.org/2000/svg">
+																			<path
+																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																				fill="#D9D9D9" />
+																		</svg>
+																	</li>
+																	<li>
+																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																			xmlns="http://www.w3.org/2000/svg">
+																			<path
+																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																				fill="#D9D9D9" />
+																		</svg>
+																	</li>
+																	<li>
+																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																			xmlns="http://www.w3.org/2000/svg">
+																			<path
+																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																				fill="#D9D9D9" />
+																		</svg>
+																	</li>
+																</ul>
+															</div>
+															<div class="price-rating">
+																<p>2 шт</p>
+																<p>1460 грн</p>
+															</div>
 														</div>
+													</li>
+													<li class="order">
+														<img src="./images/img-product-anti_aging_serum_for_the_area_around_the_eyes.png" alt="">
+														<div class="holder">
+															<div class="name">
+																<p>
+																	Антивікова сироватка
+																	для зони навколо очей
+																</p>
+																<ul class="rating">
+																		<li>
+																			<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																				xmlns="http://www.w3.org/2000/svg">
+																				<path
+																					d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																					fill="#D9D9D9" />
+																			</svg>
+																		</li>
+																		<li>
+																			<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																				xmlns="http://www.w3.org/2000/svg">
+																				<path
+																					d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																					fill="#D9D9D9" />
+																			</svg>
+																		</li>
+																		<li>
+																			<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																				xmlns="http://www.w3.org/2000/svg">
+																				<path
+																					d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																					fill="#D9D9D9" />
+																			</svg>
+																		</li>
+																		<li>
+																			<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																				xmlns="http://www.w3.org/2000/svg">
+																				<path
+																					d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																					fill="#D9D9D9" />
+																			</svg>
+																		</li>
+																		<li>
+																			<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																				xmlns="http://www.w3.org/2000/svg">
+																				<path
+																					d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																					fill="#D9D9D9" />
+																			</svg>
+																		</li>
+																</ul>
+															</div>
+															<div class="price-rating">
+																<p>1 шт</p>
+																<p>900 грн</p>
+															</div>
+														</div>
+													</li>
+													<li class="order">
+														<img src="./images/img-product-night_antiaging_cream_for_dry_skin.png" alt="">
+														<div class="holder">
+															<div class="name">
+																<p>
+																	Нічний антивіковій крем
+																	для сухої шкіри
+																</p>
+																<ul class="rating">
+																		<li>
+																			<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																				xmlns="http://www.w3.org/2000/svg">
+																				<path
+																					d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																					fill="#D9D9D9" />
+																			</svg>
+																		</li>
+																		<li>
+																			<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																				xmlns="http://www.w3.org/2000/svg">
+																				<path
+																					d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																					fill="#D9D9D9" />
+																			</svg>
+																		</li>
+																		<li>
+																			<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																				xmlns="http://www.w3.org/2000/svg">
+																				<path
+																					d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																					fill="#D9D9D9" />
+																			</svg>
+																		</li>
+																		<li>
+																			<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																				xmlns="http://www.w3.org/2000/svg">
+																				<path
+																					d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																					fill="#D9D9D9" />
+																			</svg>
+																		</li>
+																		<li>
+																			<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																				xmlns="http://www.w3.org/2000/svg">
+																				<path
+																					d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																					fill="#D9D9D9" />
+																			</svg>
+																		</li>
+																</ul>
+															</div>
+															<div class="price-rating">
+																<p>1 шт</p>
+																<p>860 грн</p>
+															</div>
+														</div>
+													</li>
+												</ul>
+												<div class="total-amount">
+													<p>Загальна сумма:</p>
+													<p>3220 грн</p>
+												</div>
+											</div>
+											<div class="list-of-orders">
+												<h4>Замовлення №5647</h4>
+												<div class="data-status">
+													<div class="data">
+														<p>Дата замовлення:</p>
+														<p>9.08.2022</p>
 													</div>
-												</li>
-												<li class="order">
-													<img src="./images/img-product-night_antiaging_cream_for_dry_skin.png" alt="">
-													<div class="holder">
-														<div class="name">
-															<p>
-																Нічний антивіковій крем
-																для сухої шкіри
-															</p>
-															<ul class="rating">
-																	<li>
-																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path
-																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																				fill="#D9D9D9" />
-																		</svg>
-																	</li>
-																	<li>
-																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path
-																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																				fill="#D9D9D9" />
-																		</svg>
-																	</li>
-																	<li>
-																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path
-																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																				fill="#D9D9D9" />
-																		</svg>
-																	</li>
-																	<li>
-																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path
-																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																				fill="#D9D9D9" />
-																		</svg>
-																	</li>
-																	<li>
-																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path
-																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																				fill="#D9D9D9" />
-																		</svg>
-																	</li>
-															</ul>
-														</div>
-														<div class="price-rating">
-															<p>1 шт</p>
-															<p>860 грн</p>
-														</div>
+													<div class="status">
+														<p>Статус:</p>
+														<p>В обробці</p>
 													</div>
-												</li>
-											</ul>
-											<div class="total-amount">
-												<p>Загальна сумма:</p>
-												<p>3220 грн</p>
+												</div>
+												<ul class="list">
+													<li class="order">
+														<img src="./images/img-product-night_antiaging_cream_for_dry_skin.png" alt="">
+														<div class="holder">
+															<div class="name">
+																<p>
+																	Нічний антивіковій крем
+																	для сухої шкіри
+																</p>
+																<ul class="rating">
+																	<li>
+																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																			xmlns="http://www.w3.org/2000/svg">
+																			<path
+																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																				fill="#D9D9D9" />
+																		</svg>
+																	</li>
+																	<li>
+																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																			xmlns="http://www.w3.org/2000/svg">
+																			<path
+																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																				fill="#D9D9D9" />
+																		</svg>
+																	</li>
+																	<li>
+																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																			xmlns="http://www.w3.org/2000/svg">
+																			<path
+																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																				fill="#D9D9D9" />
+																		</svg>
+																	</li>
+																	<li>
+																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																			xmlns="http://www.w3.org/2000/svg">
+																			<path
+																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																				fill="#D9D9D9" />
+																		</svg>
+																	</li>
+																	<li>
+																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																			xmlns="http://www.w3.org/2000/svg">
+																			<path
+																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																				fill="#D9D9D9" />
+																		</svg>
+																	</li>
+																</ul>
+															</div>
+															<div class="price-rating">
+																<p>1 шт</p>
+																<p>860 грн</p>
+															</div>
+														</div>
+													</li>
+													<li class="order">
+														<img src="./images/img-product-lotion_for_normal_and_combination_skin.png" alt="">
+														<div class="holder">
+															<div class="name">
+																<p>
+																	Лосьон для нормальної
+																	та комбінованої шкіри
+																</p>
+																<ul class="rating">
+																		<li>
+																			<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																				xmlns="http://www.w3.org/2000/svg">
+																				<path
+																					d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																					fill="#D9D9D9" />
+																			</svg>
+																		</li>
+																		<li>
+																			<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																				xmlns="http://www.w3.org/2000/svg">
+																				<path
+																					d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																					fill="#D9D9D9" />
+																			</svg>
+																		</li>
+																		<li>
+																			<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																				xmlns="http://www.w3.org/2000/svg">
+																				<path
+																					d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																					fill="#D9D9D9" />
+																			</svg>
+																		</li>
+																		<li>
+																			<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																				xmlns="http://www.w3.org/2000/svg">
+																				<path
+																					d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																					fill="#D9D9D9" />
+																			</svg>
+																		</li>
+																		<li>
+																			<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																				xmlns="http://www.w3.org/2000/svg">
+																				<path
+																					d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																					fill="#D9D9D9" />
+																			</svg>
+																		</li>
+																</ul>
+															</div>
+															<div class="price-rating">
+																<p>1 шт</p>
+																<p>1050 грн</p>
+															</div>
+														</div>
+													</li>
+													<li class="order">
+														<img src="./images/img-product-scrub_or_sensitive_skin.png" alt="">
+														<div class="holder">
+															<div class="name">
+																<p>Скраб для чутливої шкіри</p>
+																<ul class="rating">
+																	<li>
+																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																			xmlns="http://www.w3.org/2000/svg">
+																			<path
+																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																				fill="#D9D9D9" />
+																		</svg>
+																	</li>
+																	<li>
+																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																			xmlns="http://www.w3.org/2000/svg">
+																			<path
+																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																				fill="#D9D9D9" />
+																		</svg>
+																	</li>
+																	<li>
+																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																			xmlns="http://www.w3.org/2000/svg">
+																			<path
+																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																				fill="#D9D9D9" />
+																		</svg>
+																	</li>
+																	<li>
+																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																			xmlns="http://www.w3.org/2000/svg">
+																			<path
+																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																				fill="#D9D9D9" />
+																		</svg>
+																	</li>
+																	<li>
+																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																			xmlns="http://www.w3.org/2000/svg">
+																			<path
+																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																				fill="#D9D9D9" />
+																		</svg>
+																	</li>
+																</ul>
+															</div>
+															<div class="price-rating">
+																<p>2 шт</p>
+																<p>890 грн</p>
+															</div>
+														</div>
+													</li>
+													<li class="order">
+														<img src="./images/img-product-gel_for_deep_cleansing_of_the_skin_of_the_face.png" alt="">
+														<div class="holder">
+															<div class="name">
+																<p>
+																	Гель для глубокого 
+																	очищення шкіри обличчя
+																</p>
+																<ul class="rating">
+																		<li>
+																			<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																				xmlns="http://www.w3.org/2000/svg">
+																				<path
+																					d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																					fill="#D9D9D9" />
+																			</svg>
+																		</li>
+																		<li>
+																			<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																				xmlns="http://www.w3.org/2000/svg">
+																				<path
+																					d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																					fill="#D9D9D9" />
+																			</svg>
+																		</li>
+																		<li>
+																			<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																				xmlns="http://www.w3.org/2000/svg">
+																				<path
+																					d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																					fill="#D9D9D9" />
+																			</svg>
+																		</li>
+																		<li>
+																			<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																				xmlns="http://www.w3.org/2000/svg">
+																				<path
+																					d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																					fill="#D9D9D9" />
+																			</svg>
+																		</li>
+																		<li>
+																			<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+																				xmlns="http://www.w3.org/2000/svg">
+																				<path
+																					d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+																					fill="#D9D9D9" />
+																			</svg>
+																		</li>
+																</ul>
+															</div>
+															<div class="price-rating">
+																<p>1 шт</p>
+																<p>890 грн</p>
+															</div>
+														</div>
+													</li>
+												</ul>
+												<div class="total-amount">
+													<p>Загальна сумма:</p>
+													<p>3010 грн</p>
+												</div>
 											</div>
 										</div>
-										<div class="list-of-orders">
-											<h4>Замовлення №5647</h4>
-											<div class="data-status">
-												<div class="data">
-													<p>Дата замовлення:</p>
-													<p>9.08.2022</p>
-												</div>
-												<div class="status">
-													<p>Статус:</p>
-													<p>В обробці</p>
-												</div>
-											</div>
-											<ul class="list">
-												<li class="order">
-													<img src="./images/img-product-night_antiaging_cream_for_dry_skin.png" alt="">
-													<div class="holder">
-														<div class="name">
-															<p>
-																Нічний антивіковій крем
-																для сухої шкіри
-															</p>
-															<ul class="rating">
-																<li>
-																	<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path
-																			d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																			fill="#D9D9D9" />
-																	</svg>
-																</li>
-																<li>
-																	<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path
-																			d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																			fill="#D9D9D9" />
-																	</svg>
-																</li>
-																<li>
-																	<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path
-																			d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																			fill="#D9D9D9" />
-																	</svg>
-																</li>
-																<li>
-																	<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path
-																			d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																			fill="#D9D9D9" />
-																	</svg>
-																</li>
-																<li>
-																	<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path
-																			d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																			fill="#D9D9D9" />
-																	</svg>
-																</li>
-															</ul>
-														</div>
-														<div class="price-rating">
-															<p>1 шт</p>
-															<p>860 грн</p>
-														</div>
-													</div>
-												</li>
-												<li class="order">
-													<img src="./images/img-product-lotion_for_normal_and_combination_skin.png" alt="">
-													<div class="holder">
-														<div class="name">
-															<p>
-																Лосьон для нормальної
-																та комбінованої шкіри
-															</p>
-															<ul class="rating">
-																	<li>
-																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path
-																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																				fill="#D9D9D9" />
-																		</svg>
-																	</li>
-																	<li>
-																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path
-																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																				fill="#D9D9D9" />
-																		</svg>
-																	</li>
-																	<li>
-																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path
-																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																				fill="#D9D9D9" />
-																		</svg>
-																	</li>
-																	<li>
-																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path
-																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																				fill="#D9D9D9" />
-																		</svg>
-																	</li>
-																	<li>
-																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path
-																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																				fill="#D9D9D9" />
-																		</svg>
-																	</li>
-															</ul>
-														</div>
-														<div class="price-rating">
-															<p>1 шт</p>
-															<p>1050 грн</p>
-														</div>
-													</div>
-												</li>
-												<li class="order">
-													<img src="./images/img-product-scrub_or_sensitive_skin.png" alt="">
-													<div class="holder">
-														<div class="name">
-															<p>Скраб для чутливої шкіри</p>
-															<ul class="rating">
-																<li>
-																	<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path
-																			d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																			fill="#D9D9D9" />
-																	</svg>
-																</li>
-																<li>
-																	<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path
-																			d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																			fill="#D9D9D9" />
-																	</svg>
-																</li>
-																<li>
-																	<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path
-																			d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																			fill="#D9D9D9" />
-																	</svg>
-																</li>
-																<li>
-																	<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path
-																			d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																			fill="#D9D9D9" />
-																	</svg>
-																</li>
-																<li>
-																	<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path
-																			d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																			fill="#D9D9D9" />
-																	</svg>
-																</li>
-															</ul>
-														</div>
-														<div class="price-rating">
-															<p>2 шт</p>
-															<p>890 грн</p>
-														</div>
-													</div>
-												</li>
-												<li class="order">
-													<img src="./images/img-product-gel_for_deep_cleansing_of_the_skin_of_the_face.png" alt="">
-													<div class="holder">
-														<div class="name">
-															<p>
-																Гель для глубокого 
-																очищення шкіри обличчя
-															</p>
-															<ul class="rating">
-																	<li>
-																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path
-																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																				fill="#D9D9D9" />
-																		</svg>
-																	</li>
-																	<li>
-																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path
-																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																				fill="#D9D9D9" />
-																		</svg>
-																	</li>
-																	<li>
-																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path
-																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																				fill="#D9D9D9" />
-																		</svg>
-																	</li>
-																	<li>
-																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path
-																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																				fill="#D9D9D9" />
-																		</svg>
-																	</li>
-																	<li>
-																		<svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-																			xmlns="http://www.w3.org/2000/svg">
-																			<path
-																				d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-																				fill="#D9D9D9" />
-																		</svg>
-																	</li>
-															</ul>
-														</div>
-														<div class="price-rating">
-															<p>1 шт</p>
-															<p>890 грн</p>
-														</div>
-													</div>
-												</li>
-											</ul>
-											<div class="total-amount">
-												<p>Загальна сумма:</p>
-												<p>3010 грн</p>
-											</div>
-										</div>
+										<a class="show-more" href="#">Показати ще</a>
 									</div>
-									<a class="show-more" href="#">Показати ще</a>
 								</div>
 							</div>
 						</div>
@@ -1323,5 +1325,8 @@
 			</section>
 		</footer>
 	</div>
+	<script src="js/switch.js"></script>
+	<script src="js/burger.js"></script>
+	<script src="js/order.js"></script>
 </body>
 </html>
